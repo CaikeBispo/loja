@@ -2,8 +2,12 @@ package br.com.alura.loja;
 
 import br.com.alura.loja.pedido.GeraPedidoHandler;
 import br.com.alura.loja.pedido.GeraPedido;
+import br.com.alura.loja.pedido.acao.AddLogs;
+import br.com.alura.loja.pedido.acao.EnviarEmailPedido;
+import br.com.alura.loja.pedido.acao.SalvarPedido;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 
 public class TestesPedidos {
 
@@ -14,7 +18,14 @@ public class TestesPedidos {
 
         GeraPedido gerador = new GeraPedido(cliente, valorOrcamento, qtdItens);
 
-        GeraPedidoHandler handler = new GeraPedidoHandler(/*Dependencias*/);
+        GeraPedidoHandler handler = new GeraPedidoHandler(
+            Arrays.asList(
+                    new SalvarPedido(),
+                    new EnviarEmailPedido(),
+                    new AddLogs()
+                    //Ações futuras podem ser adicionadas aqui.
+            )
+        );
         
         handler.execute(gerador);
 
