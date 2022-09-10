@@ -79,6 +79,8 @@ Solução comum para um problema recorrente ao utilizar o paradigma de orientaç
                 Para entender mais sobre a teoria deste padrão, você pode conferir este link: https://refactoring.guru/design-patterns/observer.
 
 # Design Patterns II
+Auxílio: https://refactoring.guru/design-patterns
+
     Tipos
         Criacionais     
         Comportamentais - Curso I
@@ -93,13 +95,15 @@ Solução comum para um problema recorrente ao utilizar o paradigma de orientaç
             Nesta aula, aprendemos:
             Que padrões estruturais nos ajudam a relacionar diversas classes de forma organizada
             Que detalhes de infraestrutura devem ser abstraídos através de interfaces
-            Como o padrão Adapter pode nos ajudar a trocar detalhes de infraestrutura, sem muitas dores de cabeça        
+            Como o padrão Adapter pode nos ajudar a trocar detalhes de infraestrutura, sem muitas dores de cabeça      
+            Para saber mais detalhes -> https://refactoring.guru/design-patterns/adapter
 
         Decorator 
             Nesta aula, aprendemos:
             Que é possível adicionar comportamento a classes em tempo de execução;
             A aplicar esse conhecimento para combinar impostos;
             Que comportamentos adicionados em tempo de execução são possíveis, através do padrão Decorator.
+            Para saber mais detalhes -> https://refactoring.guru/design-patterns/decorator
 
         Composite
             É bastante comum nós precisarmos trabalhar com coleções de itens que podem ter mais de uma implementação. Se essa estrutura pode ser descrita como uma árvore (no modelo computacional), então o padrão Composite pode ser muito útil.
