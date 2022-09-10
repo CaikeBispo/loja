@@ -28,6 +28,7 @@ public class TestesPedidos {
         );
         
         handler.execute(gerador);
+        //Pelo fato do comando execute ter dentro de sí ações que estão invisíveis para essa classe aqui implementamos também o padrão Facade
 
     }
 
