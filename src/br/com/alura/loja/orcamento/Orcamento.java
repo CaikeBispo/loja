@@ -51,6 +51,12 @@ public class Orcamento implements Orcavel {
 
 
 	public BigDecimal getValor() {
+		try {
+			//Simulando lentidão
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			throw new RuntimeException(e);
+		}
 		return valor;
 	}
 
